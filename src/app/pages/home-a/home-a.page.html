@@ -1,0 +1,28 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>RegistrAPP</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large"></ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+
+ <h3 class="ion-text-center" style="font-weight: bold;color: white;">-- Bienvenido! {{nombre}} --</h3>
+
+  <p>Abrir escaner</p>
+
+    <ion-button (click)="EscanearQR()">
+      <ion-icon name="aperture-outline"></ion-icon>
+      Escanear código QR
+    </ion-button>
+
+    <ion-button routerLink="/select" expand="block" fill="solid" color="danger" shape="round">
+      Cerrar Sesion
+    </ion-button>
+
+</ion-content>

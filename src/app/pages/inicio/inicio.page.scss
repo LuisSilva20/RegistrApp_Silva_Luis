@@ -1,0 +1,26 @@
+ion-card-header.ios {
+    display: flex;
+    flex-flow: column-reverse;
+  }
+
+.encabezado{
+  background-color: cornsilk;
+}
+
+.contenido{
+  background-color: bisque;
+
+}
+.imghold{
+  padding: 20px;
+}
+ion-card {
+  padding-left: 5px;
+  padding-right: 5px; 
+}
+img{
+  border-radius: 2%;
+  border-color: #ffffff4c;
+  border-style: solid;
+  border-width: 0.2rem;
+}

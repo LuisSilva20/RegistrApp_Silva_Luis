@@ -1,0 +1,110 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "nombre": "Ricardo",
+      "apellidos": "Uribe",
+      "username": "Ricardo21",
+      "password": "Rurive21",
+      "role": "Estudiante",
+      "isactive": true
+    },
+    {
+      "id": 2,
+      "nombre": "Viviana",
+      "apellidos": "Alvarez",
+      "username": "Viviana12",
+      "password": "Vivianaprofe",
+      "confirmPassword": "Vivianaprofe",
+      "role": "Profesora",
+      "isactive": true
+    },
+    {
+      "nombre": "juan",
+      "apellidos": "mendez",
+      "username": "yisus homosexual",
+      "password": "yisus1234",
+      "confirmPassword": "yisus1234",
+      "role": "Profesor",
+      "isactive": true,
+      "id": 3
+    },
+    {
+      "nombre": "miguel",
+      "apellidos": "rodriguez",
+      "username": "miguelr",
+      "password": "qwer1234",
+      "confirmPassword": "qwer1234",
+      "role": "Estudiante",
+      "isactive": true,
+      "id": 4
+    },
+    {
+      "nombre": "Ariel",
+      "apellidos": "Onate",
+      "username": "ariel999",
+      "password": "asies1980",
+      "confirmPassword": "asies1980",
+      "role": "Profesor",
+      "isactive": true,
+      "id": 5
+    },
+    {
+      "id": 6,
+      "username": "luis1234",
+      "role": "Servicios",
+      "password": "luis1234",
+      "isactive": true
+    }
+  ],
+  "Profesores": [
+    {
+      "id": 1,
+      "fecha": "12-11-2023",
+      "asignatura": "programacion",
+      "username": "patoyanez"
+    },
+    {
+      "fecha": "16-10-2023",
+      "asignatura": "matematicas",
+      "username": "raimundo",
+      "id": 2
+    },
+    {
+      "fecha": "",
+      "asignatura": "",
+      "username": "Ricardo21",
+      "id": 3
+    },
+    {
+      "fecha": "",
+      "asignatura": "",
+      "username": "yisus homosexual",
+      "id": 4
+    },
+    {
+      "fecha": "",
+      "asignatura": "",
+      "username": "ariel999",
+      "id": 5
+    },
+    {
+      "fecha": "",
+      "asignatura": "",
+      "username": "ariel999",
+      "id": 6
+    },
+    {
+      "fecha": "",
+      "asignatura": "",
+      "username": "ariel999",
+      "id": 7
+    },
+    {
+      "fecha": "",
+      "asignatura": "",
+      "username": "ariel999",
+      "id": 8
+    }
+  ]
+}

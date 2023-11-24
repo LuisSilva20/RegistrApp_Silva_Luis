@@ -1,0 +1,51 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>RegistrApp</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">actualizar</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <h4>Actualizar</h4>
+
+
+  <form>
+    
+    <ion-item >
+      <ion-label>ID: </ion-label>
+      <ion-input type="ID" name="txtUsername" [(ngModel)]="usuarios.id" disabled></ion-input>
+    </ion-item> 
+
+    <ion-item>
+      <ion-label position="floating">Nombre: </ion-label>
+      <ion-input type="nombre" name="txtPass" [(ngModel)]="usuarios.nombre"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Apellidos: </ion-label>
+      <ion-input type="apellidos" name="txtPass" [(ngModel)]="usuarios.apellidos"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Username: </ion-label>
+      <ion-input name="txtpass"  [(ngModel)]="usuarios.username"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Password: </ion-label>
+      <ion-input name="txtpass"  [(ngModel)]="usuarios.password"></ion-input>
+    </ion-item>
+
+
+    <ion-row>
+      <ion-col>
+        <ion-button (click)="ActualizarUsuario()">Actualizar Usuario</ion-button>
+      </ion-col>
+    </ion-row>
+  </form>
+</ion-content>

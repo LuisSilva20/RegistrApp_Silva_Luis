@@ -1,0 +1,48 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"
+        text="Back"
+        color="primary"></ion-back-button>
+    </ion-buttons>
+    <ion-title></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">CodigoQr</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <h2 class="ion-text-center" style="font-weight: bold;color: white;">Generar CodigoQR</h2>
+    <ion-item>
+      <ion-label>Registre fecha de la asignatura</ion-label>
+    </ion-item>
+  <ion-datetime></ion-datetime>
+
+
+  <ion-item>
+    <ion-item>
+      <ion-label>Seleccionar asignatura</ion-label>
+      <ion-select value="asignatura" multiple="true" placeholder="Select asignatura">
+        <ion-select-option value="matematicas">Matematicas</ion-select-option>
+        <ion-select-option value="ingles">Ingles</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </ion-item>
+
+
+  <ion-button (click)="generarQr()" expand="block" color="primary" shape="round">
+    Generar QR
+  </ion-button>
+
+  <ion-card class="ion-text-center">
+    <ion-card-content>
+      <qrcode [qrdata]="mensaje" [width]="256" [errorCorrectionLevel]="'M'"></qrcode>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
