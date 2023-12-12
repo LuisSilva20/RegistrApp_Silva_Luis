@@ -14,12 +14,18 @@
 
  <h3 class="ion-text-center" style="font-weight: bold;color: white;">-- Bienvenido! {{nombre}} --</h3>
 
-  <p>Abrir escaner</p>
 
-    <ion-button (click)="EscanearQR()">
-      <ion-icon name="aperture-outline"></ion-icon>
-      Escanear código QR
+
+    <ion-button routerLink="/perfil-a">
+      Perfil de usuario
     </ion-button>
+
+    <p>Abrir escaner</p>
+
+      <ion-button (click)="EscanearQR()">
+        <ion-icon name="aperture-outline"></ion-icon>
+        Escanear código QR
+      </ion-button>
 
     <ion-button routerLink="/select" expand="block" fill="solid" color="danger" shape="round">
       Cerrar Sesion

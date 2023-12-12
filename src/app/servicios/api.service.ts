@@ -35,7 +35,7 @@ export class ApiService {
 
   //creamos un objeto en palabras
   CrearProfesor(newProfesor: IProfesor): Observable<IProfesor>{
-  return this.httpclient.post<IProfesores>(`${environment.apiUrl}/profesores`, newProfesor);
+  return this.httpclient.post<IProfesor>(`${environment.apiUrl}/profesores`, newProfesor);
     }
 
     BuscarUsuarioId(id:number):Observable<User>{

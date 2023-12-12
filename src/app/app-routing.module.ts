@@ -57,13 +57,21 @@ const routes: Routes = [
     loadChildren: () => import('./pages/inicio-a/inicio-a.module').then( m => m.InicioAPageModule)
   },
   {
-    path: 'perfil',
-    loadChildren: () => import('./pages/perfil/perfil.module').then( m => m.PerfilPageModule)
+    path: 'actualizar',
+    loadChildren: () => import('./pages/actualizar/actualizar.module').then( m => m.ActualizarPageModule),
+    canActivate: [IniciadoGuard]
   },
   {
-    path: 'actualizar',
-    loadChildren: () => import('./pages/actualizar/actualizar.module').then( m => m.ActualizarPageModule)
+    path: 'perfil',
+    loadChildren: () => import('./pages/perfil/perfil.module').then( m => m.PerfilPageModule),
+    canActivate: [IniciadoGuard]
   },
+  {
+    path: 'perfil-a',
+    loadChildren: () => import('./pages/perfil-a/perfil-a.module').then( m => m.PerfilAPageModule)
+  }
+
+
 ];
 
 @NgModule({
